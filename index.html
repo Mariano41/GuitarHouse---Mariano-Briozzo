@@ -10,17 +10,27 @@
 
 <link rel="stylesheet" href="css/style.css">
 
+<!-- WOW JS -->
+
+<link rel="stylesheet" href="css/animate.css">
+
+
 </head>
 
 <body>
 
-	
-	<nav >
-		<a href="index.html">
-			<img src="img/logo.png"  alt="logo de guitar house">
-		</a>
+	<!-- ARRANCA CONTENEDOR -->
+
+<div class="grid-background">
+	<nav class="nav">
 		
-		<ul >
+		<div class="logo">	
+			<a href="index.html">
+				<img src="img/logo.png"  alt="logo de guitar house">
+			</a>
+		</div>
+		
+		<ul class="main-nav">
 			<li><a href="view/nosotros.html">Nosotros</a></li>
 			<li><a href="view/guitarras.html">Guitarras</a></li>
 			<li><a href="view/accesorios.html">Accesorios</a></li>
@@ -29,32 +39,89 @@
 
 	</nav>
 
-	<header class="text-center">
+	<header class="header text-center">
+
+	<div class="wow bounceInUp">
 		<img src="img/banner.png" alt="foto de banner">
+	</div>
+	
+	<div>
 		<h1 class="text-center">El Sonido que Estabas Buscando</h1>
+	</div>
+	
 	</header>
 
-	<main>
+	<main class="main">
 
-		<article class="novedades__index">
+		<article class="novedades_index">
 		
 		<p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, ullam dicta vitae ex non veniam, odit impedit tempora reprehenderit nesciunt atque sint consequatur repellendus deserunt modi officiis nisi unde sit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dicta non, dolorem quaerat doloribus dolorum, illo illum voluptates possimus blanditiis quisquam animi ullam facilis dignissimos quo sunt molestiae sint quos.</p>
+
+		<br>	
+
+		<p class="text-white"><b>		Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, soluta ipsa at itaque voluptatem obcaecati libero unde ut doloribus deserunt corrupti, a iste et asperiores. Eos obcaecati, est provident soluta!</b>	</p>
 
 		</article>
 
 	
 	</main>
-	<section>
-		<img src="img/atencion.png" alt="Logo de atencion al cliente">
-		<p> <span class="text-grey">Atencion personalizada pre-post venta</span></p>
-		<br>
-		<img src="img/envio.png" alt="Logo de envio">
-		<p><span class="text-grey">Envios <strong>GRATIS</strong> a todo el país</span></p>
-		<br>
-		<img src="img/garantia.png" alt="Logo de garantia">
-		<p><span class="text-grey">Nuestros productos cuentan con 1 año de garantía</span></p>
+	<section class="section contenedor-selection">
+
+		<div class="section-index">
+
+			<div>
+
+				<img src="img/atencion.png" alt="Logo de atencion al cliente">
+				
+			</div>
+
+				<div class="publi-info">
+				
+				<p> <span class="text-grey">Atencion personalizada pre-post venta</span></p>
+
+				</div>
+				
+		</div>	
+				
+		<div class="section-index">
+
+			<div>
+
+				<img src="img/envio.png" alt="Logo de envio">
+				
+			</div>
+
+				<div class="publi-info">
+				
+				<p> <span class="text-grey">Envios <strong>GRATIS</strong> a todo el país</span></p>
+
+				</div>
+				
+		</div>	
+				
+		<div class="section-index">
+
+			<div>
+
+				<img src="img/garantia.png" alt="Logo de garantia">
+				
+			</div>
+
+				<div class="publi-info">
+				
+				<p> <span class="text-grey">Nuestros productos cuentan con 1 año de garantía</span></p>
+
+				</div>
+				
+		</div>	
+
 	</section>
-	<footer>
+
+		
+
+
+	<footer class="foot">
+		<div class="footer">
 		<a href="https://www.instagram.com/" target="_blank">
 			<img src="img/instagram.png" alt="Link de instagram">
 		</a>
@@ -63,7 +130,15 @@
 		</a>
 		<a href="guitarhouse@mail.com//" target="_blank">
 			<img src="img/mail.png" alt="Mail de guitar house">
-		</a>
+		</a></div>
 	</footer>
+
+</div> <!-- TERMINA CONTENEDOR -->
+
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+
 </body>
 </html>
