@@ -14,6 +14,7 @@
 	box-sizing: border-box;
 }
 
+
 html{
 	font-size: 62.5%;
 	height: 100%;
@@ -28,13 +29,13 @@ header img{
 }
 */
 h1{
-	color: #25666A;
+	color: #3c3c3c;
 	font-size: 5rem;
 }
 
 h2{
 	font-size: 4rem;
-	color: #25666A;
+	color: #3c3c3c;
 }
 
 h3{
@@ -43,7 +44,7 @@ h3{
 
 h5{
 	
-	color: #25666A;
+	color: #3c3c3c;
 	font-size: 5rem;
 	margin-bottom: 5rem;
 
@@ -52,16 +53,16 @@ li{
 	list-style: none;
 }
 
-/*nav{
+nav{
 	background-color: rgba(56, 56, 56, 1);
 	padding: 4px 20px ;
 	position: sticky;
 	top: 0;
 	display: flex;
 	animation-name: imgAlpha;
-	animation-duration: .3s;
+	animation-duration: .5s;
 }
-	*/
+
 
 
 	nav ul li a{
@@ -300,7 +301,8 @@ nav .main-nav {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: repeat(6, auto);
-	grid-template-areas: 'nav nav'
+	grid-template-areas:
+						 'nav nav'
 						 'header header'
 						 'main main'
 						 'info imagen'
@@ -376,26 +378,47 @@ nav .main-nav {
 
 /*ANIMACIONES*/
 
+.nav ul li a{
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .3;
+}
+
+.nav ul li a:hover{
+	color: black;
+	font-weight: 600;
+	background-size: 100% 2px;
+
+}
+
+
 @keyframes imgAlpha{
 	from{opacity: 0.2;}
 	to{opacity: 1;}
 }
 
+/*===========MEDIA QUERIES=============*/
 
+@media only screen and (max-width: 640px){
+		.grid-background{
+		grid-template-columns: repeat(1, auto);
+		grid-template-areas:
+					 	'nav'
+						'header'
+						'main'
+						'info' 
+						'imagen'
+						'section'
+						'foot';
 
-/*@media only screen and (min-width: 768px){
-	body{
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-areas: 'nav'
-						 	 'header'
-						  	 'main'
-							 'info'
-							 'imagen'
-							 'section'
-							 'foot';
 	}
 
+.section{
+	display: flex;
+	flex-direction: column;
+}
 
-
-}*/
-
+}
+ 
