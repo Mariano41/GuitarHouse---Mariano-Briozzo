@@ -58,7 +58,7 @@ nav{
 	padding: 4px 20px ;
 	position: sticky;
 	top: 0;
-	display: flex;
+	
 	animation-name: imgAlpha;
 	animation-duration: .5s;
 }
@@ -167,13 +167,13 @@ nav .main-nav {
 .contenedor-selection{
 	display: flex;
 	justify-content: space-around;
-
+	text-align: -webkit-center;
 }
 
 .section-index {
 	
 	padding: 50px;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .imagen-publi{
@@ -183,7 +183,7 @@ nav .main-nav {
 
 .publi-info{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	width: 55%;
 			
 }
@@ -375,6 +375,12 @@ nav .main-nav {
 	/*background-color: yellow;*/
 }
 
+.nav-align{
+	float: right;
+	margin-top: 30px;
+}
+
+
 
 /*ANIMACIONES*/
 
@@ -418,6 +424,8 @@ nav .main-nav {
 .section{
 	display: flex;
 	flex-direction: column;
+
+	
 }
 
 }
@@ -434,6 +442,9 @@ nav .main-nav {
 
 	}
 
-
+.section{
+	display: flex;
+}
 
 }
+
